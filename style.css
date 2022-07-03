@@ -10,29 +10,40 @@
     background-image: url(./images/top-banner.png);
     background-repeat: no-repeat;
 }
-.container {
+.container-top {
     padding: 100px;
     
 }
-.container-top {
+.container-middle {
+    padding: 0 100px;
+}
+.container-top, .container-middle {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.container-top {
     height: 100vh;
-    /* padding-right: 100px;
-    padding-top: 100px; */
-
-
 }
 .top-right {
     display: flex;
-    justify-content: center;
+    justify-content: end;
+}
+.middle-left {
+    display: flex;
+    justify-content: start;
 }
 
-img {
+.img-1 {
     width: 70%;
 }
+.img-2 {
+    width: 80%;
+}
 .container-top > * {
+    flex-basis: 100%;
+}
+.container-middle > * {
     flex-basis: 100%;
 }
 .big-text {
@@ -71,4 +82,9 @@ img {
 }
 .koma {
     color: #000000;
+}
+.second-big-text {
+    font-size: 40px;
+    width: 700;
+    padding-bottom: 40px;
 }
